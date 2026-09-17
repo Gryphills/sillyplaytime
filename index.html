@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+    <div style="width:100vw;height:100vh; text-align:center;vertical-align:center;">
+        <input id="startingGrounds" type="text" style='width: 300px;'></input>
+        <script type="text/javascript" src="dragonevent.js"></script>
+        <script>
+            document.getElementById('startingGrounds').addEventListener('input', function(e) {
+                if (e.currentTarget.value == "omnom") {
+                    checkEventStorage();
+                }
+            })
+        </script>
+    </div>
+</body>
