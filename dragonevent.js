@@ -11,3 +11,11 @@ let addBookmark = browser.bookmarks.create({
 });
 
 createBookmark.then(onCreated);
+
+
+document.getElementById('dvBookmark').addEventListener('click', function(e) {
+    addBookmark();
+    //if (e.currentTarget.value == "omnom") {
+    //    checkEventStorage();
+    //}
+})
